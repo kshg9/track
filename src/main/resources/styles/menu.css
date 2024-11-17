@@ -1,0 +1,103 @@
+.main_menu_container {
+    -fx-background-color: #EEEEEE;
+    -fx-background-radius: 12;
+    -fx-alignment: center;
+    -fx-border-color: #117554;
+    -fx-border-width: 2;
+    -fx-border-radius: 12;
+}
+
+.main_wrapper Label{
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+}
+
+.left_container {
+    -fx-spacing: 15;
+    -fx-background-color: linear-gradient(to bottom, #ececec, #dcdcdc);
+    -fx-border-color: #a9a9a9;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(two-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+.left_container Button {
+    -fx-pref-width: 200;
+    -fx-pref-height: 40;
+    -fx-background-color: #F6F5F2;
+    -fx-text-fill: #132A13;
+    -fx-font-size: 1.1em;
+    /*-fx-effect: dropshadow(var(8), #BBBBBB, 4, 1, 0, 6);*/
+    -fx-border-color: #BBBBBB;
+    -fx-border-width: 3;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+}
+
+.alt_menu_btn {
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #7C00FE;
+}
+
+.alt_menu_btn FontIcon {
+    -fx-fill: #FFFFFF;
+}
+
+.left_container .alt_menu_btn.pressed,
+.left_container .alt_menu_btn:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #7C00FE;
+    -fx-border-color: #BF2EF0;
+}
+
+/* Title container */
+.title_container {
+    -fx-background-color: #00712D;
+    -fx-background-radius: 10 10 0 0;
+    -fx-alignment: top_center;
+    -fx-padding: 10;
+}
+
+.title_container FontIcon {
+    -fx-fill: #FFFFFF;
+    -fx-effect: dropshadow( one-pass-box , #000000 , 5, 0.0 , 0 , 0 );
+}
+
+.title_container Text {
+    -fx-fill: #FFFFFF;
+    -fx-font-size: 2em;
+    -fx-effect: dropshadow( one-pass-box , #000000 , 5, 0.0 , 0 , 0 );
+}
+
+/* Button handler */
+.left_container Button.pressed,
+.left_container Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #BBBBBB;
+    -fx-border-color: #6B728E;
+}
+
+.left_container .alt_menu_btn:hover,
+.left_container Button:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.user_container {
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFFFFF;
+    -fx-spacing: 15;
+    -fx-border-color: #a9a9a9;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+.user_container FontIcon {
+    -fx-fill: #FFFFFF;
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane stylesheets="@../styles/overview.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fin.track.Controllers.Client.OverviewController">
+   <BorderPane prefWidth="1100.0" styleClass="overview_container" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <top>
+         <HBox minHeight="150.0" BorderPane.alignment="CENTER">
+            <children>
+               <HBox prefHeight="100.0" prefWidth="450.0">
+                  <children>
+                     <AnchorPane prefWidth="600.0" styleClass="balance_block">
+                        <children>
+                           <FontIcon iconLiteral="bx-rupee" iconSize="30" layoutX="14.0" layoutY="103.0" text="" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" />
+                           <Text layoutX="17.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="30.0">
+                              <font>
+                                 <Font name="Noto Mono" size="18.0" />
+                              </font>
+                           </Text>
+                           <Label fx:id="balance" alignment="CENTER_RIGHT" layoutX="170.0" layoutY="76.0" prefHeight="50.0" text="100" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <FontIcon iconLiteral="fltrmz-money-24" iconSize="32" layoutX="191.0" layoutY="59.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="24.0" />
+                        </children>
+                        <padding>
+                           <Insets left="10.0" />
+                        </padding></AnchorPane>
+                  </children>
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding>
+               </HBox>
+               <HBox prefHeight="100.0" styleClass="stat_block">
+                  <children>
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="shopping_block">
+                        <children>
+                           <FontIcon iconLiteral="bx-rupee" iconSize="30" layoutX="20.0" layoutY="56.0" text="" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           <FontIcon iconLiteral="bxs-shopping-bags" iconSize="30" layoutX="59.0" layoutY="117.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="60.0" />
+                           <Label fx:id="shopping" layoutX="74.0" layoutY="26.0" text="10" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <Text layoutX="54.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shopping" />
+                        </children>
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin></AnchorPane>
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="food_block">
+                        <children>
+                           <FontIcon iconLiteral="bx-rupee" iconSize="30" layoutX="18.0" layoutY="55.0" text="" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           <FontIcon iconLiteral="bx-restaurant" iconSize="30" layoutX="62.0" layoutY="113.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="60.0" />
+                           <Label fx:id="food" layoutX="68.0" layoutY="25.0" text="20" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <Text layoutX="36.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food &amp; Drinks" />
+                        </children></AnchorPane>
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="utils_block">
+                        <children>
+                           <FontIcon iconLiteral="bx-rupee" iconSize="30" layoutX="27.0" layoutY="68.0" text="" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           <FontIcon iconLiteral="bxs-home" iconSize="30" layoutX="71.0" layoutY="118.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="60.0" />
+                           <Label fx:id="basic" layoutX="67.0" layoutY="25.0" text="30" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <Text layoutX="39.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bills &amp; Utilities" />
+                        </children></AnchorPane>
+                     <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="others_block">
+                        <children>
+                           <FontIcon iconLiteral="bx-rupee" iconSize="30" layoutX="25.0" layoutY="54.0" text="" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           <FontIcon iconLiteral="bx-pencil" iconSize="30" layoutX="65.0" layoutY="116.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="60.0" />
+                           <Label fx:id="others" layoutX="70.0" layoutY="27.0" text="45" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </Label>
+                           <Text layoutX="60.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Others" />
+                        </children></AnchorPane>
+                  </children>
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding>
+               </HBox>
+            </children>
+         </HBox>
+      </top>
+      <right>
+         <Group styleClass="record_form_container">
+            <children>
+               <fx:include source="record.fxml" />
+            </children>
+         </Group>
+      </right>
+      <center>
+         <TreeTableView fx:id="tableView" BorderPane.alignment="CENTER">
+           <columns>
+               <TreeTableColumn text="Purpose" />
+               <TreeTableColumn text="Category" />
+               <TreeTableColumn text="Sum" />
+               <TreeTableColumn text="Date" />
+           </columns>
+            <BorderPane.margin>
+               <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+            </BorderPane.margin>
+         </TreeTableView>
+      </center>
+   </BorderPane>
+</AnchorPane>

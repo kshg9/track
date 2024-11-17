@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fin.track.Controllers.Client.SettingsController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <BorderPane styleClass="state" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <top>
+         <Label styleClass="state_title" text="General Settings" BorderPane.alignment="CENTER">
+            <graphic>
+               <FontIcon iconLiteral="fltfal-edit-settings-24" iconSize="24" />
+            </graphic>
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+            <BorderPane.margin>
+               <Insets bottom="10.0" top="5.0" />
+            </BorderPane.margin>
+         </Label>
+      </top>
+      <center>
+         <Group>
+            <BorderPane.margin>
+               <Insets />
+            </BorderPane.margin>
+            <children>
+               <VBox styleClass="input_field">
+                  <children>
+                     <HBox spacing="100.0">
+                        <children>
+                           <VBox prefHeight="80.0" prefWidth="200.0">
+                              <children>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+                                 <TextField fx:id="fullname" promptText="fullname" />
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="80.0" prefWidth="200.0">
+                              <children>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+                                 <TextField fx:id="username" promptText="username" />
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                     <HBox>
+                        <children>
+                           <VBox prefWidth="200.0">
+                              <children>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                                 <TextField fx:id="email" prefHeight="30.0" promptText="email" styleClass="box" />
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                     <HBox alignment="BOTTOM_LEFT" styleClass="button_field">
+                        <children>
+                           <Button mnemonicParsing="false" onAction="#saveInfo" text="Save">
+                              <graphic>
+                                 <FontIcon iconLiteral="fltrmz-save-24" iconSize="18" />
+                              </graphic>
+                           </Button>
+                           <Button mnemonicParsing="false" onAction="#deleteInfo" styleClass="alt_button" text="Delete Account">
+                              <graphic>
+                                 <FontIcon iconLiteral="fltral-delete-24" iconSize="18" />
+                              </graphic>
+                           </Button>
+                        </children>
+                        <VBox.margin>
+                           <Insets bottom="10.0" top="50.0" />
+                        </VBox.margin>
+                        <opaqueInsets>
+                           <Insets />
+                        </opaqueInsets>
+                     </HBox>
+                  </children>
+               </VBox>
+            </children>
+         </Group>
+      </center>
+   </BorderPane>
+   <stylesheets>
+      <URL value="@../styles/scommon.css" />
+      <URL value="@../styles/settings.css" />
+   </stylesheets>
+</AnchorPane>

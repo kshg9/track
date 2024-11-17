@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="root_color" fx:id="client_parent" minWidth="1100.0" stylesheets="@../styles/frame.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fin.track.Controllers.Client.ClientFrameController">
+    <left>
+        <fx:include source="menu.fxml" />
+    </left>
+    <center>
+        <BorderPane>
+            <center>
+                <fx:include source="overview.fxml" />
+            </center>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </BorderPane>
+    </center>
+</BorderPane>

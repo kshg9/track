@@ -1,0 +1,61 @@
+.input_field TextField,
+.input_field PasswordField{
+    -fx-border-color: #000000;
+    -fx-min-width: 250;
+    -fx-min-height: 35;
+    
+}
+
+.input_field Text{
+    -fx-font-weight: bold;
+}
+
+.input_field Hbox,
+.input_field VBox{
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+
+.button_field {
+    -fx-spacing: 10em;
+    -fx-padding: 10;
+}
+.button_field Button{
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 250;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+
+    -fx-border-color: #758694;
+    -fx-background-radius: 3;
+    -fx-border-width: 3;
+    -fx-border-radius: 3;
+}
+
+.button_field Button:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.button_field FontIcon {
+    -fx-fill: #FFFFFF;
+}
+
+.button_field .alt_button {
+    -fx-background-color: #FF004D;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 250;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+
+    -fx-border-color: #FF6868;
+    -fx-background-radius: 7;
+    -fx-border-width: 3;
+    -fx-border-radius: 3;
+}
+
+.button_field .alt_button:hover {
+    -fx-cursor: hand;
+    -fx-border-color: #982B1C;
+}

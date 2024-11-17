@@ -1,0 +1,59 @@
+.option_selector {
+    -fx-background: #ECF39E;
+}
+
+.option_selector .label {
+    -fx-text-fill: #132A13;
+    -fx-font-size: 1.1em;
+}
+
+.option_selector .arrow {
+    -fx-background-color: #132A13;
+}
+
+#choice-box-popup-menu {
+    -fx-background-color: #ECF39E;
+}
+
+.option_selector .input_field {
+    -fx-background-color: #FFFFFF;
+    -fx-pref-height: 35;
+    -fx-pref-width: 230;
+    -fx-font-size: 1.2em;
+    -fx-border-color: #021526;
+}
+
+.record_form_container {
+    -fx-background-color: #D2E0FB;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-border-style: solid;
+    -fx-border-color: #4379F2;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.record_form_container Label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+}
+
+.record_form_container FontIcon {
+    -fx-icon-size: 24px;
+}
+
+.record_form_button {
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+}
+
+.record_form_container Button:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}

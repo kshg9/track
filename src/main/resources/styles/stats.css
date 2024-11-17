@@ -1,0 +1,40 @@
+.stats_state {
+    -fx-background-color: #F0EBE3;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-border-style: dashed;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.stats_state FontIcon {
+    -fx-icon-size: 32px;
+}
+
+.buttons_section ToggleButton {
+    -fx-background-color: #31363F;
+
+    -fx-border-color: #7A1CAC;
+    -fx-border-width: 3;
+
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+}
+
+.buttons_section ToggleButton:hover {
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+
+.buttons_section ToggleButton:selected {
+    -fx-background-color: #AD49E1;
+}

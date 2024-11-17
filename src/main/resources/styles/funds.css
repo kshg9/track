@@ -1,0 +1,75 @@
+.record_form_container {
+    -fx-background-color: #BFF6C3;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-border-style: solid;
+    -fx-border-color: #9BEC00;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.balance_block {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: #000000;
+    -fx-background-color: linear-gradient(to bottom right, #B4E380, #B4E380);
+}
+
+.record_form_container Label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+}
+
+.record_form_container .btn {
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 150;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+}
+
+.record_form_container Button FontIcon {
+    -fx-fill: #ffffff;
+}
+
+.record_form_container Button:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.record_form_container .input_field {
+    -fx-background-color: #FFFFFF;
+    -fx-pref-height: 30;
+    -fx-pref-width: 250;
+    -fx-font-size: 1.2em;
+    -fx-border-color: #021526;
+}
+
+.right_block {
+    -fx-background-color: #D8D2C2;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-alignment: top_center;
+    -fx-border-style: dashed;
+    -fx-border-color: #000000;
+}
+
+.information_block {
+    -fx-background-color: #FF9D9D;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-border-style: solid;
+    -fx-border-color: #B43F3F;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}

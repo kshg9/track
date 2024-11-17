@@ -1,0 +1,78 @@
+.overview_container {
+    -fx-background-color: #F0EBE3;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-border-style: dashed;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+
+.calendar_container {
+    -fx-background-radius: 10;
+}
+
+.balance_block {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: #000000;
+    -fx-background-color: linear-gradient(to bottom right, #B4E380, #B4E380);
+}
+
+/* Styles for additional-info such as shopping, food & drinks, etc.. */
+.stat_block AnchorPane{
+    -fx-background-insets: 5;
+    -fx-border-insets: 5;
+
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    
+    -fx-border-color: #000000;
+}
+
+.stat_block Label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.stat_block Text {
+    -fx-fill: #FFFFFF;
+}
+
+.stat_block FontIcon {
+    -fx-fill: #FFFFFF;
+}
+
+.shopping_block {
+    -fx-background-color: linear-gradient(to bottom right, #4379F2, #3572EF);
+    -fx-border-color: #7C00FE;
+}
+.food_block {
+    -fx-background-color: linear-gradient(to bottom right, #FFA823, #FFB200);
+    -fx-border-color: #FB773C;
+}
+.utils_block {
+    -fx-background-color: linear-gradient(to bottom right, #FF6969, #FF0000);
+    -fx-border-color: #5D0E41;
+}
+.others_block {
+    -fx-background-color: linear-gradient(to bottom right, #697565, #16423C);
+    -fx-border-color: #3C3D37;
+}
+
+.stat_block Text {
+    -fx-fill: #FFFFFF;
+    -fx-font-size: 1.2em;
+    -fx-effect: dropshadow( one-pass-box , #000000 , 5, 0.0 , 0 , 0 );;
+}
+
+.stat_block FontIcon {
+    -fx-fill: #FFFFFF;
+    -fx-effect: dropshadow( one-pass-box , #000000 , 5, 0.0 , 0 , 0 );;
+}

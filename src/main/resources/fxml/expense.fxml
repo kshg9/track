@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefWidth="750.0" stylesheets="@../styles/scommon.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="state" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+         <BorderPane>
+            <BorderPane.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+            <left>
+               <Button mnemonicParsing="false" text="Delete" BorderPane.alignment="CENTER" />
+            </left>
+         </BorderPane>
+      </bottom>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <top>
+         <Label styleClass="state_title" text="Manage Expense" BorderPane.alignment="CENTER">
+            <graphic>
+               <FontIcon iconLiteral="bxs-book" iconSize="24" />
+            </graphic>
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+            <BorderPane.margin>
+               <Insets bottom="20.0" top="5.0" />
+            </BorderPane.margin>
+         </Label>
+      </top>
+      <center>
+         <TreeTableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      </center>
+   </BorderPane>
+</AnchorPane>

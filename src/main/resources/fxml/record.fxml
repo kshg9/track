@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane stylesheets="@../styles/record.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fin.track.Controllers.Client.ExpController">
+    <BorderPane layoutX="12.0" layoutY="14.4" styleClass="record_form_container" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <center>
+         <Group BorderPane.alignment="CENTER">
+            <children>
+                  <GridPane hgap="10" prefHeight="178.0" styleClass="option_selector" vgap="10">
+                      <Label text="Date:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                      <DatePicker fx:id="dateField" styleClass="input_field" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                          <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                          </cursor>
+                      </DatePicker>
+                      <Label text="Category:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                      <Label text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="categoryField" styleClass="input_field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                      <TextField fx:id="descriptionField" styleClass="input_field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                      <Label text="Amount:" GridPane.rowIndex="3" />
+                      <TextField fx:id="amountField" styleClass="input_field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                      <columnConstraints>
+                          <ColumnConstraints halignment="LEFT" />
+                          <ColumnConstraints />
+                      </columnConstraints>
+                      <rowConstraints>
+                          <RowConstraints />
+                          <RowConstraints />
+                          <RowConstraints />
+                          <RowConstraints />
+                      </rowConstraints>
+                  </GridPane>
+            </children>
+         </Group>
+        </center>
+        <bottom>
+            <Button fx:id="addButton" onAction="#addExpenseHandler" prefHeight="40.0" prefWidth="100.0" styleClass="record_form_button" text="Add Expense" BorderPane.alignment="TOP_CENTER">
+                <BorderPane.margin>
+                    <Insets bottom="30.0" top="20.0" />
+                </BorderPane.margin>
+                <graphic>
+                    <FontIcon iconColor="#ffffff" iconLiteral="fltfmz-note-add-16" iconSize="20" />
+                </graphic>
+            </Button>
+        </bottom>
+        <top>
+            <Label text="Add Expenditure" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                <padding>
+                    <Insets bottom="15.0" top="15.0" />
+                </padding>
+                <graphic>
+                    <FontIcon iconLiteral="fltfal-document-edit-20" />
+                </graphic>
+            <BorderPane.margin>
+               <Insets left="20.0" />
+            </BorderPane.margin>
+          </Label>
+        </top>
+    </BorderPane>
+</AnchorPane>
