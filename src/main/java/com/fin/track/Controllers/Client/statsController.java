@@ -36,12 +36,12 @@ public class statsController implements Initializable {
             XYChart.Series<String, Number> series = new XYChart.Series<>();
             
             if (event.getSource() == button_1) {
-                series.setName("Income");
+                series.setName("Expense");
                 series.getData().addAll(
-                    new XYChart.Data<>("Jan", 2300),
-                    new XYChart.Data<>("Feb", 2900),
-                    new XYChart.Data<>("Mar", 2600),
-                    new XYChart.Data<>("Apr", 3200)
+                    new XYChart.Data<>("2020", 2300),
+                    new XYChart.Data<>("2021", 2900),
+                    new XYChart.Data<>("2022", 2600),
+                    new XYChart.Data<>("2023", 3200)
                 );
             } else if (event.getSource() == button_2) {
                 series.setName("Expenses");
@@ -52,12 +52,12 @@ public class statsController implements Initializable {
                     new XYChart.Data<>("Apr", 1900)
                 );
             } else if (event.getSource() == button_3) {
-                series.setName("Savings");
+                series.setName("Expense");
                 series.getData().addAll(
-                    new XYChart.Data<>("Jan", 800),
-                    new XYChart.Data<>("Feb", 1100),
-                    new XYChart.Data<>("Mar", 1400),
-                    new XYChart.Data<>("Apr", 1300)
+                    new XYChart.Data<>("9:00", 800),
+                    new XYChart.Data<>("10:00", 1100),
+                    new XYChart.Data<>("11:00", 1400),
+                    new XYChart.Data<>("12:00", 1300)
                 );
             }
             
